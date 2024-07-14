@@ -1,0 +1,21 @@
+---
+- hosts: web
+  become: yes
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Deploy HTML page
+      copy:
+        content: "<h1>Hello, World!</h1>"
+        dest: /usr/share/nginx/html/index.html
+
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
