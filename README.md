@@ -68,7 +68,14 @@ This README provides an overview of setting up a basic web application infrastru
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------Part 2:
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Part 2:
+
+
 Application Components
 app.py: Contains the Flask application with endpoints to add and retrieve visitors.
 db.py: Contains functions to establish a database connection and create the visitors table.
