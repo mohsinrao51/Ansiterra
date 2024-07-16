@@ -51,10 +51,11 @@ Setup Instructions
 Make sure Ansible is installed on your local machine. You can install Ansible using pip:
 => pip install ansible
 2. Run the Ansible Playbook
-Update your Ansible inventory file (hosts) to include the EC2 instance:
+Update your Ansible inventory file (hosts) to include the EC2 instance: hosts.ini
 
 **[web]
 16.170.219.181 ansible_user=ubuntu ansible_ssh_private_key_file=/home/worker/Downloads/basemachine.pem**
+
 Run the playbook:
 
 => ansible-playbook -i hosts setup-nginx.yml
