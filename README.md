@@ -27,11 +27,11 @@ Setup Instructions
    https://github.com/mohsinrao51/Ansiterra.git
 
 2. Initialize Terraform
-     terraforn init
+     => terraforn init
 3. Plan Terraform Configuration
-     terraform plan
+    => terraform plan
 4. Apply Terraform Configuration
-     terrafrom apply
+    => terrafrom apply
 
 5. Access the Web Application
 After the infrastructure is created, access the web application using the DNS name of the Load Balancer.
@@ -49,15 +49,15 @@ Ansible Playbook: setup-nginx.yml
 Setup Instructions
 1. Ensure Ansible is Installed
 Make sure Ansible is installed on your local machine. You can install Ansible using pip:
-pip install ansible
+=> pip install ansible
 2. Run the Ansible Playbook
 Update your Ansible inventory file (hosts) to include the EC2 instance:
 
-[web]
-16.170.219.181 ansible_user=ubuntu ansible_ssh_private_key_file=/home/worker/Downloads/basemachine.pem
+**[web]
+16.170.219.181 ansible_user=ubuntu ansible_ssh_private_key_file=/home/worker/Downloads/basemachine.pem**
 Run the playbook:
 
-ansible-playbook -i hosts setup-nginx.yml
+=> ansible-playbook -i hosts setup-nginx.yml
 
 Access the Web Server
 After running the playbook, you can access the web server using the EC2 instance's public IP or the Load Balancer's DNS name.
