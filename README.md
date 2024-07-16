@@ -66,4 +66,58 @@ Conclusion
 This README provides an overview of setting up a basic web application infrastructure on AWS using Terraform and configuring the web server using Ansible. Follow the provided instructions to deploy and configure the infrastructure and web server.
 
 
+Application Components
+app.py: Contains the Flask application with endpoints to add and retrieve visitors.
+db.py: Contains functions to establish a database connection and create the visitors table.
+test.py: Contains unit tests for the Flask application.
+Setup Instructions
+Prerequisites
+Python 3.x
+pip (Python package installer)
+MySQL database running on AWS RDS
+1. Clone the Repository
+https://github.com/mohsinrao51/Ansiterra.git
+
+2. Create a Virtual Environment
+
+=> python3 -m venv venv
+=> source venv/bin/activate
+
+3. Install Dependencies
+
+4. Run the Applicatio
+
+=> python app.py
+
+The application will be accessible at http://0.0.0.0:5000.
+
+API Endpoints
+Add a Visitor
+URL: /visitors
+Method: POST
+Request Payload: {"name": "Visitor Name"}
+Response: {"message": "Visitor added"}
+Get Visitors
+URL: /visitors
+Method: GET
+Response: [{id: 1, name: "Visitor Name", visit_time: "2024-07-16T00:00:00"}]
+Running the Tests
+
+1. Install Testing Dependencies
+Make sure pytest is installed:
+
+=> pip install pytest
+
+2. Run the Tests
+
+=> pytest test.py
+
+
+The tests will check the following:
+
+Adding a visitor.
+Retrieving the list of visitors.
+Handling the case when no name is provided in the POST request.
+
+
 
