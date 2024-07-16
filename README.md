@@ -66,6 +66,9 @@ Conclusion
 This README provides an overview of setting up a basic web application infrastructure on AWS using Terraform and configuring the web server using Ansible. Follow the provided instructions to deploy and configure the infrastructure and web server.
 
 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------Part 2:
 Application Components
 app.py: Contains the Flask application with endpoints to add and retrieve visitors.
 db.py: Contains functions to establish a database connection and create the visitors table.
