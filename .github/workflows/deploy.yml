@@ -27,8 +27,10 @@ jobs:
       - name: Authenticate with GCP using Workload Identity Federation
         uses: google-github-actions/auth@v1
         with:
-          workload_identity_provider: "projects/541187981102/locations/global/workloadIdentityPools/rondah-deployer/providers/git
-- name: Set up Node.js
+          workload_identity_provider: "projects/541187981102/locations/global/workloadIdentityPools/rondah-deployer/providers/git"
+          service_account: "rondah-deployer@your-gcp-project-id.iam.gserviceaccount.com"
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 22
