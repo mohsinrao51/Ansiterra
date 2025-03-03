@@ -28,7 +28,7 @@ jobs:
         uses: google-github-actions/auth@v1
         with:
           workload_identity_provider: "projects/541187981102/locations/global/workloadIdentityPools/rondah-deployer/providers/git"
-          service_account: "rondah-deployer@your-gcp-project-id.iam.gserviceaccount.com"
+          service_account: "rondah-deployer@tribal-archery-449512-c7.iam.gserviceaccount.com"
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
