@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 jobs:
   deploy:
-    if: github.repository == 'rondah-ai/rondah-backend-services'
+    if: github.repository == 'mohsinrao51/Ansiterra'
     runs-on: ubuntu-latest
 
     permissions:
